@@ -35,7 +35,7 @@ class App extends Component {
   componentWillUnmount() {}
 
   formSubmitHandler = value => {
-    this.setState({ searchValue: value, hits: [] });
+    this.setState({ searchValue: value, hits: [],page: 1 });
   };
   handleButtonLoadMore = () => {
     this.setState(PrevState => {
